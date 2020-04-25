@@ -3,7 +3,7 @@ const port = 8000;
 const app = express();
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 require('dotenv').config()
 
