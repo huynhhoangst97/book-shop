@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // config mongoose
 const optionMongoose = { useNewUrlParser: true, useUnifiedTopology: true };
-mongoose.connect(process.env.URI_MONGOOSE, optionMongoose)
+mongoose.connect(process.env.URI_MONGOOSE, optionMongoose, () => console.log('connected to DB!'));
 
 // Route
 const apiRoute = require('./routes/api.route');
